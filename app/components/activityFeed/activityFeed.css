@@ -1,0 +1,39 @@
+.text{
+    color: #000000;
+    font-size: 1rem;
+}
+
+.special-text{
+    color:#BC006D;
+    font-weight: bold;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #666666d6;
+}
+
+.activity-item1{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.25px #aaaaaa solid;
+}
+
+.activity-item2{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.25px #aaaaaa solid;
+}
+
+.activity-item3{
+    display: flex;
+    flex-direction: row;
+}
+
+.person-icon{
+    margin-right: 1rem;
+}

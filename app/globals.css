@@ -38,9 +38,22 @@ body {
 }
 
 .content-box{
-  padding: 1rem;
-  margin: 2rem;
+  margin: 1rem 2rem 1rem 2rem;
   border-radius: 1rem;
   border: 0.25px #aaaaaa solid;
   background-color: white;
+}
+
+.title-box{
+  background-color: white;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.line{
+  height: 1px;
+  background-color: #aaaaaa;
+  width: 100%;
 }

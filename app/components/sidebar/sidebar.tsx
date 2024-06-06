@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar col-2">
       <div className='brand-box'>
-        <h1 className='brand'>Acmy Solutions</h1>
+        <h1 className='brand pr-6'>Acmy Solutions</h1>
       </div>
       <div className='nav-item-box'>
         <img src='../../assets/Icon.jpg' alt='icon'/>
