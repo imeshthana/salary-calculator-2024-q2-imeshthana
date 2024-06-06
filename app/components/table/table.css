@@ -50,3 +50,31 @@
     pointer-events: none;
     cursor: default;
   }
+
+.priority-low {
+    color: #2F80ED;
+    background-color: #c8deff;
+    border-radius: 12px;
+    padding: 2px 8px;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  
+  .priority-medium {
+    color: #c39200;
+    background-color: #FFE5B4;
+    border-radius: 12px;
+    padding: 2px 8px;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  
+  .priority-high {
+    color: #EB5757;
+    background-color: #FFCCCC;
+    border-radius: 12px;
+    padding: 2px 8px;
+    display: inline-block;    
+    font-size: 0.8rem;
+  }
+  

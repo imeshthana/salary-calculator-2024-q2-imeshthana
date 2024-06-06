@@ -37,6 +37,19 @@ const Table = () => {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
+  const getPriorityClass = (priority: string) => {
+    switch (priority) {
+      case 'LOW':
+        return 'priority-low';
+      case 'MEDIUM':
+        return 'priority-medium';
+      case 'HIGH':
+        return 'priority-high';
+      default:
+        return '';
+    }
+  };
+
   return (
     <div className="content-box">
       <div className="title-box">
@@ -59,7 +72,7 @@ const Table = () => {
               <td>{task.completed ? 'Completed' : 'Pending'}</td>
               <td>{task.todo}</td>
               <td>{task.createdBy}</td>
-              <td>{task.priority}</td>
+              <td><p className={getPriorityClass(task.priority)}>{task.priority}</p></td>
               <td>{new Date(task.createdAt).toLocaleDateString()}</td>
             </tr>
           ))}

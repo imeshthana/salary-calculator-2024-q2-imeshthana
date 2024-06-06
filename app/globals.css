@@ -38,7 +38,7 @@ body {
 }
 
 .content-box{
-  margin: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
   border-radius: 1rem;
   border: 0.25px #aaaaaa solid;
   background-color: white;
@@ -56,4 +56,11 @@ body {
   height: 1px;
   background-color: #aaaaaa;
   width: 100%;
+}
+
+h2{
+  font-size: 1.25rem;
+  margin-left: 2rem;
+  color: black;
+  margin-bottom: 1rem;
 }
