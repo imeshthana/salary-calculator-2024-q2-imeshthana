@@ -1,10 +1,9 @@
 import React from 'react';
 import './sidebar.css'
-import Image from 'next/image'
 
 const Sidebar = () => {
   return (
-    <div className="sidebar col-2">
+    <div className="sidebar col-2 ">
       <div className='brand-box'>
         <h1 className='brand pr-6'>Acmy Solutions</h1>
       </div>

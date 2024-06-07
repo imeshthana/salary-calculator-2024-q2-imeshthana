@@ -77,4 +77,29 @@
     display: inline-block;    
     font-size: 0.8rem;
   }
+
+  .completed-text {
+    color: rgb(154, 0, 105);
+    font-weight: bold;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .checkbox.in-progress {
+    background-color: yellow;
+    color: pink;
+    border: none;
+  }
+  
+  .checkbox.completed {
+    background-color: green;
+    color: #6f008e;
+    border: none;
+  }
   

@@ -42,6 +42,14 @@ const Table = () => {
     }
   };
 
+  const handleCheckboxChange = (id: string) => {
+    setTasks(prevTasks =>
+      prevTasks.map(task =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
+  };
+
   return (
     <div className="content-box">
       <div className="title-box">
@@ -61,8 +69,20 @@ const Table = () => {
         <tbody>
           {currentTasks.map((task:Task) => (
             <tr key={task.id}>
-              <td>{task.completed ? 'Completed' : 'Pending'}</td>
-              <td>{task.todo}</td>
+              <td>
+                <input
+                  type="checkbox"
+                  checked={task.completed}
+                  onChange={() => handleCheckboxChange(task.id)}
+                  className={`checkbox ${task.completed ? 'completed' : 'in-progress'}`}
+                />
+              </td>   
+              <td>
+                <div>
+                  {task.todo}
+                  {!task.completed && <p className="completed-text">Mark as done</p>}
+                </div>
+              </td>       
               <td>{task.createdBy}</td>
               <td><p className={getPriorityClass(task.priority)}>{task.priority}</p></td>
               <td>{new Date(task.createdAt).toLocaleDateString()}</td>
