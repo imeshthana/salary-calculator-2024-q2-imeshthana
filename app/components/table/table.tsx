@@ -2,15 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './table.css';
 import Pagination from './pagination';
-
-type Task = {
-  id: string;
-  todo: string;
-  createdBy: string;
-  completed: boolean;
-  priority: string;
-  createdAt: string;
-};
+import {Task} from '../../../types/types'
 
 const Table = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

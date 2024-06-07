@@ -12,9 +12,11 @@ a{
     color: rgb(154, 0, 105);
 }
 
-.content-box .cross-icon{
+.cross-image {
     position: absolute;
-    top: 6.5rem;
+    top: 5.75rem;
     right: 1.75rem;
     cursor: pointer;
-}
+    height: 15px;
+    width: 15px;
+  }

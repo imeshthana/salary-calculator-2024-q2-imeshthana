@@ -10,7 +10,7 @@ function ActivityFeed() {
         <div className='line'></div>
         <div className='activity-item1 pr-2 pl-2 pt-3 pb-3'>
             <div className='person-icon'>
-                <img src='../../../assets/person1.png' alt='person'></img>
+                <img src='/person1.png' alt='person'></img>
             </div>
             <div className='activity-text'>
                 <p className='text'><span className='name'>Kushantha Charuka</span> created <span className='special-text'>Contract need John Beiges signature</span></p>
@@ -19,7 +19,7 @@ function ActivityFeed() {
         </div>
         <div className='activity-item2 pr-2 pl-2 pt-3 pb-3'>
             <div className='person-icon'>
-                <img src='../../../assets/person2.png' alt='person'></img>
+                <img src='/person2.png' alt='person'></img>
             </div>
             <div className='activity-text'>
                 <p className='text'>Lorem ipsum <span className='name'>dolor sit amet</span>, consectetur adipiscing elit. <span className='name'>Maecenas</span> pretium neque</p>
@@ -28,7 +28,7 @@ function ActivityFeed() {
         </div>
         <div className='activity-item3 pr-2 pl-2 pt-3 pb-3'>
             <div className='person-icon'>
-                <img src='../../../assets/person2.png' alt='person'></img>
+                <img src='/person2.png' alt='person'></img>
             </div>
             <div className='activity-text'>
                 <p className='text'>Lorem ipsum <span className='name'>dolor sit amet</span>, consectetur adipiscing elit. <span className='name'>Maecenas</span> pretium neque</p>

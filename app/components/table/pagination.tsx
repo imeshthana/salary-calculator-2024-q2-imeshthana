@@ -1,13 +1,7 @@
 import React from 'react'
-
-type PaginationProps = {
-    itemsPerPage: number;
-    totalItems: number;
-    paginate: (pageNumber: number) => void;
-    currentPage: number;
-  };
+import { PaginationProps } from '@/types/types';
   
-  const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }: PaginationProps) => {
+const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }: PaginationProps) => {
     const pageNumbers = [];
     const totalPages = Math.ceil(totalItems / itemsPerPage);
   
@@ -43,6 +37,6 @@ type PaginationProps = {
           </li>
         </ul>
     );
-  };
+};
 
 export default Pagination
